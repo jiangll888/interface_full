@@ -127,6 +127,14 @@ class DataConfig:
                         data[key] = self.replace_randnum(value)
         return data
 
+    def replace_randnum_for_sql(self, data):
+        if isinstance(data,str):  # select col_1,col_2 from person_table where col_1="##id";
+            # 如果里面含有##则替换动态参数，从global_var.ini里查出来
+            if "##" in data:
+                value = data.split("##")[1].split("\"")[0]
+                data = data.replace("##{}".format(value),self.read_i.get_value(value))
+        return data
+
     def rand_num(self):
         return random.randint(10000001,100000000)
 
@@ -176,25 +184,30 @@ class DataConfig:
                 return post_params_list
         return None
 
-    def get_expext(self):
-        return self.db_data and self.db_data[settings.EXPECT]
+    def get_expext_for_db(self):
+        if self.db_data and self.db_data[settings.EXPECT_FOR_DB]:
+            expect = self.db_data[settings.EXPECT_FOR_DB]
+            expect_list = expect.split("|")    #如果有多个参数，比如前面是预期返回结果，后面是文件是否存在（希望文件不存在的可以标注not=文件名）
+            expect_list[0] = self.replace_randnum_for_sql(expect_list[0])
+            # 从设备上把db文件拷贝下来，传过来的需要告知是查询哪张表，如果不传给个默认
+            do_telnet(settings.SQLITE_CMD.format(db_name,db_name,settings.win_ip))
+            # 打开数据库连接
+            op_db = OperationDB("sqlite", db_name)
+            expect_list[0] = op_db.search_one(sql)
+            if len(expect_list) == 2:
+                if "{" in expect_list[1]:
+                    if "##" in expect_list[1]:
+                        #如果里面有需要替换的动态变量，才去走替换函数，提高性能，否则每次不管有没有要替换的变量，都要去递归判断每个变量是否需要替换，接口比较多的话会耗时多
+                        expect_list[1] = self.replace_randnum(json.loads(expect_list[1]))
+                    else:
+                        expect_list[1] = json.loads(expect_list[1])
+            return expect_list
 
-    def get_expect_for_db(self):
-        expect = self.get_expext()
-        if expect and "{" in expect:
-            if "##" in expect:
-                #如果里面有需要替换的动态变量，才去走替换函数，提高性能，否则每次不管有没有要替换的变量，都要去递归判断每个变量是否需要替换，接口比较多的话会耗时多
-                expect = self.replace_randnum(json.loads(expect))
-            else:
-                expect = json.loads(expect)
-            if settings.EXPECT_SQL in expect:
-                sql = expect[settings.EXPECT_SQL]
-                #从设备上把db文件拷贝下来，传过来的需要告知是查询哪张表，如果不传给个默认
-                do_telnet(db_name)
-                #打开数据库连接
-                op_db = OperationDB("sqlite",db_name)
-                expect = op_db.search_one(sql)
-        return expect
+    def get_expect_for_other(self):
+        if self.db_data  and  self.db_data[settings.EXPECT]:
+            sql = expect[settings.EXPECT_SQL]
+
+
 
     def get_result(self):
         return self.db_data and self.db_data[settings.RESULT]
@@ -218,6 +231,8 @@ if __name__ == "__main__":
     #d.read_i.write_data("1","2")
     r = d.get_data()
     print(r,type(r))
+    res1 = d.replace_randnum_for_sql('select col_1,col_2 from person_table where col_1="##id";')
+    print(res1)
     # print(d.get_url())
     # print(d.rand_str(),type(d.rand_str()))
     # data1 = {"pass":"test12345","person":{"id":"##id","idcardNum":123,"name":"Neo","IDPermission":2}}

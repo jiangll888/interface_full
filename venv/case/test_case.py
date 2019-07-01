@@ -42,12 +42,12 @@ class RunCase(unittest.TestCase):
         op_db.close()
 
 if __name__ == "__main__":
-    unittest.main()
-    # suite = unittest.defaultTestLoader.loadTestsFromTestCase(RunCase)
-    # filename = time.strftime("%Y-%m-%d %H-%M-%S")
-    # dirname = os.path.join(os.path.dirname(os.getcwd()), "report")
-    # isExists = os.path.exists(dirname)
-    # if not isExists:
-    #     os.makedirs(dirname)
-    # BeautifulReport(suite).report(description="接口自动化测试",filename=filename,log_path=dirname)
+    # unittest.main()
+    suite = unittest.defaultTestLoader.loadTestsFromTestCase(RunCase)
+    filename = time.strftime("%Y-%m-%d %H-%M-%S")
+    dirname = os.path.join(os.path.dirname(os.getcwd()), "report")
+    isExists = os.path.exists(dirname)
+    if not isExists:
+        os.makedirs(dirname)
+    BeautifulReport(suite).report(description="接口自动化测试",filename=filename,log_path=dirname)
 

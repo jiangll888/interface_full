@@ -8,7 +8,7 @@ import subprocess
 import pbs
 from config import settings
 
-def do_telnet(file,Host=settings.SQLITE_HOST, Port=settings.SQLITE_PORT, username=settings.SQLITE_USER, password=settings.SQLITE_PASSWD):
+def do_telnet(cmd,Host=settings.SQLITE_HOST, Port=settings.SQLITE_PORT, username=settings.SQLITE_USER, password=settings.SQLITE_PASSWD):
     # 连接Telnet服务器
     tn = telnetlib.Telnet(Host, Port, timeout=1)
     tn.set_debuglevel(3)
@@ -25,11 +25,11 @@ def do_telnet(file,Host=settings.SQLITE_HOST, Port=settings.SQLITE_PORT, usernam
     #     print("****** login incorrect!\n")
     tn.read_until(b"\r\n~ # ")
     tn.write(("cd /data/sqlite3" + "\n").encode('utf-8'))
-    #tn.write(("ls"+"\n").encode('utf-8'))
-    tn.read_until(b"\r\n/data/sqlite3 #")
-    tn.write(("tftp -l {} -r {} -p {}".format(file,file,settings.win_ip) + "\n").encode('utf-8'))
-    tn.read_until(b"\r\n/data/sqlite3 #")
-    print("copy {} success".format(file))
+    tn.write((cmd+"\n").encode('utf-8'))
+    tn.read_until(b"\r\n/data/sqlite3000 #",3)
+    # tn.write(("tftp -l {} -r {} -p {}".format(file,file,settings.win_ip) + "\n").encode('utf-8'))
+    # tn.read_until(b"\r\n/data/sqlite3 #")
+    # print("copy {} success".format(file))
     tn.close();
 
 
@@ -45,4 +45,4 @@ if __name__ == '__main__':
     Index = 0
     print(time.asctime(), ":   ****** begin", "\n")
     password = ''
-    do_telnet(file)
+    do_telnet("ls")

@@ -16,7 +16,7 @@ DEPEND_REQUEST_FIELD = "depend_request_field"
 DEPEND_RESPONSE_FIELD = "depend_response_field"
 POST_ACTION = "post_action"
 EXPECT = "expect"
-EXPECT_SQL = "SQL"
+EXPECT_FOR_DB = "expect_for_db"
 RESULT = "result"
 TOKEN = "token"
 POST_PARAMS = "post_params"
@@ -28,6 +28,7 @@ HEADER_URLENCODE = "application/x-www-form-urlencoded"
 HEADER_TYPE = "Content-Type"
 URL_ENCODE = {"Content-Type":"application/x-www-form-urlencoded"}
 URL_RE = "^https?://(\d{1,3}.){3}\d{1,3}:\d{1,5}|^https?://.*com/"
+
 
 DB_TYPE = "mysql"
 DB_HOST = "127.0.0.1"
@@ -43,6 +44,7 @@ SQLITE_HOST = "192.168.11.88"
 SQLITE_USER = "root"
 SQLITE_PORT = "23"
 SQLITE_PASSWD = ""
+SQLITE_CMD = "tftp -l {} -r {} -p {}"
 
 TEST_CASE_SQL = "select * from {};".format(TABLE_NAME)
 CLEAR_RESULT_SQL = "update {} set {}='';".format(TABLE_NAME,RESULT)

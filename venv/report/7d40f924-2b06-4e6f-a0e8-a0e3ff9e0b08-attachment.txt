@@ -1,0 +1,5 @@
+类前运行
+方法前
+重置设备 <class 'str'>
+{'case_id': '5C_001', 'case_name': '重置设备', 'url': '/device/reset', 'method': 'post', 'header_info': '{"header":{"Content-Type":"application/x-www-form-urlencoded"}}', 'params': '{"data":{"pass":"test12345","delete":true}}', 'is_run': 0, 'depend_case_id': None, 'depend_request_field': None, 'depend_response_field': None, 'post_action': 'change_url', 'post_params': None, 'expect': '{\n"msg": "操作成功，并将设备配置恢复出厂设置",\n"result": 1,\n"success": true\n}', 'result': ''} <class 'dict'>
+方法后

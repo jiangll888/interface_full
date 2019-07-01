@@ -1,0 +1,5 @@
+方法前
+创建bodyset <class 'str'>
+{'case_id': 'autoit_002', 'case_name': '创建bodyset', 'url': '/algor/bodyset', 'method': 'post', 'header_info': '{"header":{"Content-Type":"application/json","token":"e3cecdaf6c96f1edfe3673ba0f4da33f298438bae8895e4fe379f27dd34aae1f"}}', 'params': '', 'is_run': 0, 'depend_case_id': None, 'depend_request_field': None, 'depend_response_field': None, 'post_action': None, 'post_params': None, 'expect': '{"result":1,"code":"CD_SUS-1000","msg":"success"}', 'result': ''} <class 'dict'>
+方法后
+类后运行
