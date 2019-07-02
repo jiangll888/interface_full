@@ -1,0 +1,56 @@
+ls E:\code\send_main1.py
+
+[1;32mWelcome to HiLinux.[0;39m
+None of nfsroot found in cmdline.
+~ # ls E:\code\send_main1.py
+ls: E:codesend_main1.py: No such file or directory
+~ # 
+~ # ls E:\code\send_main1.py
+
+[1;32mWelcome to HiLinux.[0;39m
+None of nfsroot found in cmdline.
+~ # ls E:\code\send_main1.py
+ls: E:codesend_main1.py: No such file or directory
+~ # 
+~ # ls E:\code\send_main1.py
+
+None of nfsroot found in cmdline.
+~ # ls E:\code\send_main1.py
+ls: E:codesend_main1.py: No such file or directory
+~ # 
+~ # ls E:\code\send_main1.py
+
+[1;32mWelcome to HiLinux.[0;39m
+None of nfsroot found in cmdline.
+~ # ls E:\code\send_main1.py
+ls: E:codesend_main1.py: No such file or directory
+~ # 
+~ # ls /data/sysconf-bk.json
+
+[1;32mWelcome to HiLinux.[0;39m
+None of nfsroot found in cmdline.
+~ # ls /data/sysconf-bk.json
+[0;0m/data/sysconf-bk.json[0m
+~ # 
+~ # ls /data/sysconf-bk.json
+
+[1;32mWelcome to HiLinux.[0;39m
+None of nfsroot found in cmdline.
+~ # ls /data/sysconf-bk.json
+[0;0m/data/sysconf-bk.json[0m
+~ # 
+~ # ls /data/sysconf-bk.json
+
+[1;32mWelcome to HiLinux.[0;39m
+None of nfsroot found in cmdline.
+~ # ls /data/sysconf-bk.json
+[0;0m/data/sysconf-bk.json[0m
+~ # 
+~ # ls /data/sysconf-bk.json
+
+[1;32mWelcome to HiLinux.[0;39m
+None of nfsroot found in cmdline.
+~ # ls /data/sysconf-bk.json
+[0;0m/data/sysconf-bk.json[0m
+~ # 
+~ # 

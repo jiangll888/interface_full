@@ -1,4 +1,0 @@
-方法前
-侦测人体 <class 'str'>
-{'case_id': 'autoit_001', 'case_name': '侦测人体', 'url': '/algor/detect/body', 'method': 'post', 'header_info': '{"header":{"Content-Type":"multipart/form-data;boundary=--------------------------725558114536989570168302","token":"e3cecdaf6c96f1edfe3673ba0f4da33f298438bae8895e4fe379f27dd34aae1f"}}', 'params': '{"file":{"file":"[\'36002032_123456.jpg\',open(\'C:/Users/44820/Desktop/pic/file/36002032_123456.jpg\',\'rb\'),\'image/jpeg\',{}]"}}', 'is_run': 0, 'depend_case_id': None, 'depend_request_field': None, 'depend_response_field': None, 'post_action': None, 'post_params': None, 'expect': '{}', 'result': ''} <class 'dict'>
-方法后

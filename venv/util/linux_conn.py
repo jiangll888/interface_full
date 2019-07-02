@@ -10,7 +10,7 @@ from config import settings
 
 def do_telnet(cmd,Host=settings.SQLITE_HOST, Port=settings.SQLITE_PORT, username=settings.SQLITE_USER, password=settings.SQLITE_PASSWD):
     # 连接Telnet服务器
-    tn = telnetlib.Telnet(Host, Port, timeout=1)
+    tn = telnetlib.Telnet(Host, Port, timeout=2)
     tn.set_debuglevel(3)
 
     # 输入登录用户名
@@ -36,7 +36,7 @@ def do_telnet(cmd,Host=settings.SQLITE_HOST, Port=settings.SQLITE_PORT, username
 if __name__ == '__main__':
     # Host = input("IP:")  # Telnet服务器IP
     # Port = input("Port:")  # Telnet服务器端口
-    Host = "192.168.11.88"
+    Host = "192.168.19.107"
     Port = "23"
     username = 'root'  # 登录用户名
     password = ''
@@ -45,4 +45,7 @@ if __name__ == '__main__':
     Index = 0
     print(time.asctime(), ":   ****** begin", "\n")
     password = ''
-    do_telnet("ls")
+    res = do_telnet("ls")
+    print(res)
+    cmd = "telnet 192.168.19.107 > file"
+    os.popen(cmd)

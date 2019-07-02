@@ -127,7 +127,7 @@ class DataConfig:
                         data[key] = self.replace_randnum(value)
         return data
 
-    def replace_randnum_for_sql(self, data):
+    def replace_randnum_for_str(self, data):
         if isinstance(data,str):  # select col_1,col_2 from person_table where col_1="##id";
             # 如果里面含有##则替换动态参数，从global_var.ini里查出来
             if "##" in data:
@@ -184,28 +184,67 @@ class DataConfig:
                 return post_params_list
         return None
 
-    def get_expext_for_db(self):
+    def replace_true(self,data):
+        if isinstance(data,dict):
+            for key, value in data.items():
+                if "true" == value:
+                        data[key] = True
+                if isinstance(value, list):
+                    for num, item in enumerate(value):
+                        value[num] = self.replace_true(item)
+                if isinstance(value, dict):
+                        data[key] = self.replace_true(value)
+        return data
+
+    def get_expect_for_db(self):
         if self.db_data and self.db_data[settings.EXPECT_FOR_DB]:
             expect = self.db_data[settings.EXPECT_FOR_DB]
-            expect_list = expect.split("|")    #如果有多个参数，比如前面是预期返回结果，后面是文件是否存在（希望文件不存在的可以标注not=文件名）
-            expect_list[0] = self.replace_randnum_for_sql(expect_list[0])
+            # 如果有多个参数，比如前面是sql语句，后面是期望这个sql语句返回的结果
+            expect_list = expect.split("|")
+            expect_list[0] = self.replace_randnum_for_str(expect_list[0])
+            db_and_sql = expect_list[0].split(">")
+            if len(db_and_sql) == 2:
+                db_name = db_and_sql[0]
+                sql = db_and_sql[2]
+            else:
+                db_name = settings.SQLITE_DB_NAME
+                sql = db_and_sql[0]
             # 从设备上把db文件拷贝下来，传过来的需要告知是查询哪张表，如果不传给个默认
             do_telnet(settings.SQLITE_CMD.format(db_name,db_name,settings.win_ip))
             # 打开数据库连接
             op_db = OperationDB("sqlite", db_name)
             expect_list[0] = op_db.search_one(sql)
             if len(expect_list) == 2:
-                if "{" in expect_list[1]:
+                # 如果查不到的就预期空值，比如删除了的
+                if expect_list[1] == "None":
+                    expect_list[1] = eval(expect_list[1])
+                elif "{" in expect_list[1]:
                     if "##" in expect_list[1]:
-                        #如果里面有需要替换的动态变量，才去走替换函数，提高性能，否则每次不管有没有要替换的变量，都要去递归判断每个变量是否需要替换，接口比较多的话会耗时多
+                        # 如果里面有需要替换的动态变量，才去走替换函数，提高性能，否则每次不管有没有要替换的变量，都要去递归判断每个变量是否需要替换，接口比较多的话会耗时多
                         expect_list[1] = self.replace_randnum(json.loads(expect_list[1]))
                     else:
                         expect_list[1] = json.loads(expect_list[1])
+                    expect_list[1] = self.replace_true(expect_list[1])
             return expect_list
 
     def get_expect_for_other(self):
-        if self.db_data  and  self.db_data[settings.EXPECT]:
-            sql = expect[settings.EXPECT_SQL]
+        if self.db_data and self.db_data[settings.EXPECT]:
+            expect = self.db_data[settings.EXPECT]
+            # 如果有多个参数，比如前面是预期的接口返回结果，后面是文件是否存在（希望文件不存在的可以标注not=文件名）
+            expect_list = expect.split("|")
+            if "{" in expect_list[0]:
+                if "##" in expect_list[0]:
+                    # 如果里面有需要替换的动态变量，才去走替换函数，提高性能，否则每次不管有没有要替换的变量，都要去递归判断每个变量是否需要替换，接口比较多的话会耗时多
+                    expect_list[0] = self.replace_randnum(json.loads(expect_list[0]))
+                else:
+                    expect_list[0] = json.loads(expect_list[0])
+                expect_list[0] = self.replace_true(expect_list[0
+                                                   ])
+            if len(expect_list) == 2:
+                expect_list[1] = self.replace_randnum_for_str(expect_list[1])
+                # 如果不希望文件存在呢，则在文件前面加-
+                expect_list[1] = expect_list[1].split("-")
+            return expect_list
 
 
 
@@ -218,7 +257,7 @@ class DataConfig:
 if __name__ == "__main__":
     db = OperationDB()
     sql = "select * from cases_copy where case_id=%s"
-    pa = ("5C_001",)
+    pa = ("5C_003",)
     data = db.search_one(sql,pa)
     print(data)
     # print(data[settings.PARAMS],type(data[settings.PARAMS]))
@@ -231,8 +270,9 @@ if __name__ == "__main__":
     #d.read_i.write_data("1","2")
     r = d.get_data()
     print(r,type(r))
-    res1 = d.replace_randnum_for_sql('select col_1,col_2 from person_table where col_1="##id";')
+    res1 = d.replace_randnum_for_str('select col_1,col_2 from person_table where col_1="##id";')
     print(res1)
+    print(d.get_expect_for_other())
     # print(d.get_url())
     # print(d.rand_str(),type(d.rand_str()))
     # data1 = {"pass":"test12345","person":{"id":"##id","idcardNum":123,"name":"Neo","IDPermission":2}}

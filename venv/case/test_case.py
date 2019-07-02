@@ -42,7 +42,7 @@ class RunCase(unittest.TestCase):
         op_db.close()
 
 if __name__ == "__main__":
-    # unittest.main()
+    #unittest.main()
     suite = unittest.defaultTestLoader.loadTestsFromTestCase(RunCase)
     filename = time.strftime("%Y-%m-%d %H-%M-%S")
     dirname = os.path.join(os.path.dirname(os.getcwd()), "report")

@@ -51,9 +51,7 @@ class SendMain:
         self.request_data = dc.get_data()
         self.request_file = dc.get_file()
         self.depend_case_id = dc.get_depend_case_id()
-        self.expect = dc.get_expect_for_db()
-        self.post_action = dc.get_post_action()
-        self.post_params = dc.get_post_params()
+
 
     def run_main_iter(self):
         dd = DependData(self.data)
@@ -84,11 +82,29 @@ class SendMain:
             else:
                 try:
                     print(res.json())
-                    r = self.cmp.compare(self.expect, res.json())
+                    dc = DataConfig(self.data)
+                    r1 = r2 = r3 = True
+                    self.expect_for_db = dc.get_expect_for_db()
+                    self.expect_for_other = dc.get_expect_for_other()
+                    if self.expect_for_db:
+                        # 如果只传了sql语句，说明想与返回结果对比
+                        if len(self.expect_for_db) == 1:
+                            r1 = self.cmp.compare(self.expect_for_db[0], res.json())
+                        else:
+                            # 如果传了两个参数，则前面是sql语句，后面是希望sql查询出的结果
+                            r1 = self.cmp.compare(self.expect_for_db[0], self.expect_for_db[1])
+                    # 如果传了expect_for_other则会做与接口的返回结果对比
+                    if self.expect_for_other:
+                        # 与接口返回结果对比
+                        r2 = self.cmp.compare(self.expect_for_other[0], res.json())
+                        if len(self.expect_for_other) == 2:
+                            # 如果传了第二个参数则要判断文件是否存在
+                            r3 = self.cmp.compare(self.expect_for_other[1])
+                    r = r1 and r2 and r3
                 except Exception as e:
                     print("发生了未知错误: {}".format(e))
                     r = False
-                break
+                    break
         if self.is_run:
             if res and self.is_write:
             # oc.write_cookie(res)
@@ -110,6 +126,9 @@ class SendMain:
         数据清理操作
         :return:
         '''
+        dc = DataConfig(self.data)
+        self.post_action = dc.get_post_action()
+        self.post_params = dc.get_post_params()
         if self.post_action or self.depend_case_id:
             post_act_obj = PostAct(self.post_action,self.post_params,self.depend_case_id,self.url)
             post_act_obj.handle_post_action()

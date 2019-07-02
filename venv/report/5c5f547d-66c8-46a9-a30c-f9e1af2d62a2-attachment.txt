@@ -1,4 +1,0 @@
-方法前
-设置密码 <class 'str'>
-{'case_id': '5C_002', 'case_name': '设置密码', 'url': '/setPassWord', 'method': 'post', 'header_info': '{"header":{"Content-Type":"application/x-www-form-urlencoded"}}', 'params': '{"data":{"oldPass":"test12345","newPass":"test12345"}}', 'is_run': 0, 'depend_case_id': None, 'depend_request_field': None, 'depend_response_field': None, 'post_action': None, 'post_params': None, 'expect': '{"data": "passWord is:test12345", "msg": "密码设置成功", "result": 1, "success": true}', 'result': ''} <class 'dict'>
-方法后

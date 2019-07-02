@@ -1,5 +1,0 @@
-方法前
-删除人员 <class 'str'>
-{'case_id': '5C_004', 'case_name': '删除人员', 'url': '/person/delete', 'method': 'post', 'header_info': '', 'params': '{"pass":"test1234","id":""}', 'is_run': 1, 'depend_case_id': '5C_003', 'depend_request_field': 'id', 'depend_response_field': 'data.id', 'post_action': None, 'post_params': None, 'expect': None, 'result': 'pass'} <class 'dict'>
-{'data': {'effective': '5106843927', 'invalid': ''}, 'msg': 'effective 中的内容代表已删除有效的ID;invalid 中的内容代表无效或者不存在的ID', 'result': 1, 'success': True}
-方法后

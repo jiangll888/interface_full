@@ -92,9 +92,9 @@ class OperationDB:
         self.db.close()
 
 if __name__ == '__main__':
-    opera_db = OperationDB('sqlite')
-    res = opera_db.search_one("select col_9 from `identify_record_table` where col_2=1000;")
-    # res = opera_db.search_one("select user_name,telphone,source,status from t_activity_order WHERE source='PAWH'" )
+    opera_db = OperationDB('sqlite',"person_manager_record.db")
+    res = opera_db.search_one('select `col_1`,`col_2` from `person_table` where `col_1`="48729894";')
+    # # res = opera_db.search_one("select user_name,telphone,source,status from t_activity_order WHERE source='PAWH'" )
     print(res,type(res))
 
     # # res1 = opera_db.makeDictFactory(*res)
@@ -104,3 +104,7 @@ if __name__ == '__main__':
     # b = [[1,2,3],[4,5,6]]
     # r = [dict(z) for z in [(zip(a,data)) for data in b]]
     # print(r)
+    # db = sqlite3.connect(r"E:\工具\person_manager_record.db")
+    # cur = db.cursor()
+    # cur.execute('select `col_1`,`col_2` from `person_table` where `col_1`="48729894";')
+    # print(cur.fetchone())

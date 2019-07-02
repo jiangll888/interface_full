@@ -1,3 +1,0 @@
-方法前
-{'data': {'effective': '9472165830', 'invalid': ''}, 'msg': 'effective 中的内容代表已删除有效的ID;invalid 中的内容代表无效或者不存在的ID', 'result': 1, 'success': True}
-方法后

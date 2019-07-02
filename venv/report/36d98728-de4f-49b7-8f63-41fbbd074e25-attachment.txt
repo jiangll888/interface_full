@@ -1,3 +1,0 @@
-方法前
-{'data': {'IDPermission': 2147483647, 'IDnumber': '110101930101123', 'createTime': 1561943646840, 'faceAndCardPermission': -1, 'facePermission': 2, 'id': '6109473285', 'idCardPermission': 2, 'idcardNum': '123456789012', 'name': 'liushishi'}, 'msg': '人员信息添加成功', 'result': 1, 'success': True}
-方法后

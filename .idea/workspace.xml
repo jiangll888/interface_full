@@ -2,16 +2,110 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="608b095e-db45-4a5d-8ccf-1a4a26d060e5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/venv/util/telnet.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/base/send_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/base/send_main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/case/test_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/case/test_case.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/config/dataconfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/config/dataconfig.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/config/global_var.ini" beforeDir="false" afterPath="$PROJECT_DIR$/venv/config/global_var.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/config/set_db_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/config/set_db_config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/config/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/report/2019-06-21 20-11-51.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/report/2019-06-21 20-28-22.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/report/2019-06-21 20-28-42.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/report/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/case/test_case_allure.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/0237e26f-f2d6-42ba-9b9f-4072368ca00a-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/052a39cc-613e-4500-88e6-0ca806a3df09-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/0813f6fa-481f-4a5e-8c25-defe59bc7ab9-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/0a0afa85-bcb8-494b-b9d0-192f1beb9f9e-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/0a2b7bba-716e-43f0-84f9-03d2a034b2da-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/0e5e6cc7-19f8-4d59-8f2c-32844ae1addd-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/101a81e4-86e6-425c-a280-69d8715eecb3-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/110464cd-1c70-4af8-bbf2-8f3ff12a8678-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/125df1d5-806b-486a-a44d-eab27adfc899-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/13cb5405-1e16-420f-a3a1-26a1bbfa7569-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/180986cf-000b-4689-949c-d7b43af3e588-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/199bb62d-662d-4461-91b4-3ae6ff7b069a-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/1d942075-6d1a-422b-a931-50a9185cf4a7-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/24a798d1-adc2-4a52-85a5-7be05f94658d-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/251ad3b3-3a8f-4fa6-8ff0-ca5588f1cdd7-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/2df889ed-8897-48b9-81d8-a6ffd8e5c824-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/323172d5-749b-4b3c-b4ab-7ed97c487b6e-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/34050d9f-1bc8-4daf-afb2-c0c72f173736-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/34bd0c35-1f2f-4a49-9b9f-f86fb7f8fed4-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/36820af0-3dd0-4d3e-b5cd-b8088fa7ceaf-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/36d98728-de4f-49b7-8f63-41fbbd074e25-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/379a1a86-8660-416e-a865-1eff30dd8d66-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/38dea189-2236-4fb0-b6b5-d702853149fb-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/3a2de8e9-6c6f-4054-924d-f5312e0a3e48-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/3b6cf379-8bd5-42cd-bd6e-cde44d700dc6-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/3cd3822b-105a-4cb0-bb71-eb717ec07215-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/3fcbd406-26d0-4ea6-a8b0-9cc84dc7ac9f-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/40285d1b-5d90-45a2-9c7a-f7eb1140f012-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/41aaa257-10cc-4af2-939c-410e38efd47f-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/4294a23f-340f-49c9-b41c-2c75abae34ba-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/4a81add4-36b4-4e3a-8144-9a9ed13cb8e0-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/4cbcfbd2-e58b-44c0-a989-d6b9e50e1e7c-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/4e22a8f6-2e37-4fd5-a3e5-d423b230eedd-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/4e50d015-b150-409d-9af2-b5dc3891ae71-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/510d0e5e-898b-4675-9f7a-b77dde51af87-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/58fb2d0f-3664-4ee2-9a66-53ad82ec9912-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/5c5f547d-66c8-46a9-a30c-f9e1af2d62a2-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/622ccdb4-d030-4065-b41a-f7fceb21b035-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/65ff9714-ab48-4ac5-819b-3777251e6243-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/66f14486-028b-4e00-a60e-a1334d70e810-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/68776727-56bf-4c92-88e7-05c42f276c1f-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/6a74513f-4dd8-4db0-b1ef-5faff04ea706-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/6dc6c2f1-ecb2-410e-8331-6fee52022e2b-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/738ce502-3b60-4e5c-b740-3fc0bb7374e0-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/761a74fa-480d-4a57-9a23-9ca8b05f1b86-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/7641d35b-6a08-4a57-97c1-101a9b75dc23-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/7d3133b6-94a0-4f1d-8481-bf33f11f2bfe-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/7d40f924-2b06-4e6f-a0e8-a0e3ff9e0b08-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/7e62b513-ed09-493e-ab22-2e58bee7f07c-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/7ef2a119-4019-4a0a-8707-7b7a92e50c76-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/7fe94b27-7958-446a-a362-9ea34c186e4a-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/83a99e1b-97a7-4616-b5ad-a548cd64f3c6-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/854f099f-359e-4b44-a90f-e84ee16ca362-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/85878f0b-108c-4155-9843-482204785dc8-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/875d67a8-0c77-41e3-a676-d375e5c8e290-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/897b68d7-c7f1-41d3-afcb-674eb2e94916-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/8a38bb71-07a0-4928-b9d6-65e5da826e94-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/8b8e6d27-2b34-48ab-8423-593fe26608ad-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/8e20ba38-d486-42e2-acf0-eadea66ff79b-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/8f0da01b-ce04-4997-96bd-efacb4676c1c-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/907c4bf3-9a05-4b46-a1f6-fbfc75cf8607-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/92d77af2-2df7-4671-861b-58daecf88376-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/9654be18-bef1-4718-84a4-19f2c40fd1e5-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/99ead38e-bcab-4ab9-9c73-012303b35fe5-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/a2feb28c-6b9f-481e-91ca-728b1c3dcee2-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/ad90d42f-b662-44e6-8369-6188d6e47795-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/ae519e62-cd3c-4d29-aed6-be3b88075bd9-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/ae7c030c-5187-489e-989f-b40b83ae438a-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/b10892ef-cfd4-420f-91cd-827bf5bd526e-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/b1af2f6f-4443-416b-a11f-b460671327ed-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/b4bd1fa7-2132-4d7f-821c-e6b8e7dcf6eb-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/b4d60e15-187d-48c1-ba56-6d84b20834ba-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/b531e4ea-bc9d-4043-a2f8-116d6ff4d078-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/b5c1bbc6-3fe5-4f18-a62a-ef519e5264b8-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/bb6a1dbe-7d2f-4dff-acad-d6cf1b395bf3-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/c0f175fc-71e8-4cb9-8487-32d220d606aa-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/c8fe0bc4-5180-4219-a112-ec110bd5ac69-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/ca944cd0-0512-46ac-9c0b-c7aa72f43b9d-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/ce610081-ab90-4ede-8335-e5787a0dfd45-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/cf677009-3a53-49a0-b924-a9860ce33d41-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/d09486fa-bc56-4ad5-bfcb-dd972d89f78a-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/d3aab186-2428-4ed9-8393-b4ab5547798a-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/e06cb5eb-7f63-4f5b-98a0-67cf9ecf4440-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/e2f3bf69-96f9-4872-b037-a2771b698e5f-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/e41e5941-0375-4ce5-9896-693d44dacdf6-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/e823f7b8-9d22-40bc-834d-6b9711354b59-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/e9f525b2-6607-4f89-b662-afe2b6dd732a-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/eadbcd30-0fda-4dc6-b565-74078cd98495-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/eb6926ab-61c4-469a-937e-210127ff323e-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/ec20572b-f968-425d-beca-61e888635943-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/f42be8ad-1efb-43f4-b231-e73cc0e5a6a6-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/fbdd2f84-4fe9-416e-9952-df1377504488-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/report/ff10587c-0aff-4215-b559-51633feccc1e-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/util/compare.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/util/compare.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/util/linux_conn.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/util/linux_conn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/util/opera_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/util/opera_db.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,27 +116,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/case/test_case_allure.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="36" column="34" lean-forward="true" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/base/depend_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2860">
-              <caret line="137" selection-start-line="137" selection-end-line="137" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/util/opera_db.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
@@ -51,11 +124,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/config/dataconfig.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="195" column="26" selection-start-line="195" selection-start-column="26" selection-end-line="195" selection-end-column="26" />
+            <state relative-caret-position="-906">
+              <caret line="190" column="40" selection-start-line="190" selection-start-column="40" selection-end-line="190" selection-end-column="40" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -64,19 +137,55 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/config/settings.py">
+        <entry file="file://$PROJECT_DIR$/venv/base/send_request.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="46" column="10" selection-start-line="46" selection-end-line="46" selection-end-column="10" />
+            <state relative-caret-position="484">
+              <caret line="52" column="19" selection-start-line="42" selection-start-column="4" selection-end-line="52" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/venv/case/test_case.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="594">
+              <caret line="39" column="16" lean-forward="true" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/util/read_ini.py">
+        <entry file="file://$PROJECT_DIR$/venv/config/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="920">
+              <caret line="42" column="11" selection-start-line="42" selection-end-line="42" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/util/compare.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="73" column="41" selection-start-line="73" selection-start-column="41" selection-end-line="73" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/base/send_main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="105" column="29" lean-forward="true" selection-start-line="103" selection-start-column="16" selection-end-line="105" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,8 +193,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/config/global_var.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="110">
+              <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -93,8 +202,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/config/set_db_config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+            <state relative-caret-position="498">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -103,12 +212,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/util/linux_conn.py">
+        <entry file="file://$PROJECT_DIR$/venv/util/telnet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="29" column="74" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="74" />
+            <state relative-caret-position="-750">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
-                <element signature="e#0#16#0" expanded="true" />
+                <element signature="e#0#13#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -138,20 +247,23 @@
         <option value="$PROJECT_DIR$/venv/Lib/site-packages/requests/api.py" />
         <option value="$PROJECT_DIR$/venv/case/test1.py" />
         <option value="$PROJECT_DIR$/venv/base/handle_value_list_dict.py" />
-        <option value="$PROJECT_DIR$/venv/util/compare.py" />
-        <option value="$PROJECT_DIR$/venv/base/send_main.py" />
         <option value="$PROJECT_DIR$/venv/config/token.json" />
         <option value="$PROJECT_DIR$/venv/base/depend_data.py" />
         <option value="$PROJECT_DIR$/venv/base/send_request.py" />
         <option value="$PROJECT_DIR$/venv/base/post_act.py" />
-        <option value="$PROJECT_DIR$/venv/config/set_db_config.py" />
-        <option value="$PROJECT_DIR$/venv/case/test_case.py" />
-        <option value="$PROJECT_DIR$/venv/config/global_var.ini" />
         <option value="$PROJECT_DIR$/venv/util/read_ini.py" />
         <option value="$PROJECT_DIR$/venv/case/test_case_allure.py" />
+        <option value="$PROJECT_DIR$/venv/util/opera_db.py" />
         <option value="$PROJECT_DIR$/venv/util/linux_conn.py" />
+        <option value="$PROJECT_DIR$/venv/LOG/2019-07-02/xgl.txt" />
+        <option value="$PROJECT_DIR$/venv/util/telnet.py" />
         <option value="$PROJECT_DIR$/venv/config/settings.py" />
+        <option value="$PROJECT_DIR$/venv/config/global_var.ini" />
         <option value="$PROJECT_DIR$/venv/config/dataconfig.py" />
+        <option value="$PROJECT_DIR$/venv/case/test_case.py" />
+        <option value="$PROJECT_DIR$/venv/util/compare.py" />
+        <option value="$PROJECT_DIR$/venv/base/send_main.py" />
+        <option value="$PROJECT_DIR$/venv/config/set_db_config.py" />
       </list>
     </option>
   </component>
@@ -167,7 +279,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -190,13 +301,14 @@
               <item name="interface2" type="b2602c69:ProjectViewProjectNode" />
               <item name="interface2" type="462c0819:PsiDirectoryNode" />
               <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="LOG" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="interface2" type="b2602c69:ProjectViewProjectNode" />
               <item name="interface2" type="462c0819:PsiDirectoryNode" />
               <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="LOG" type="462c0819:PsiDirectoryNode" />
+              <item name="2019-07-02" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="interface2" type="b2602c69:ProjectViewProjectNode" />
@@ -252,22 +364,24 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/venv/util" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\44820\PycharmProjects\interface2\venv\Lib\site-packages" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\44820\PycharmProjects\interface2\venv\util" />
       <recent name="C:\Users\44820\PycharmProjects\interface2\venv\config" />
       <recent name="C:\Users\44820\PycharmProjects\interface2\venv\base" />
       <recent name="C:\Users\44820\PycharmProjects\interface2\venv\Lib" />
       <recent name="C:\Users\44820\PycharmProjects\interface2\venv" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\44820\PycharmProjects\interface2\venv\Lib\site-packages" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -282,8 +396,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.linux_conn">
-    <configuration name="dataconfig" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.test_case">
+    <configuration name="compare" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="interface2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -291,11 +405,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/config" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/util" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/config/dataconfig.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/util/compare.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -346,6 +460,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="telnet" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="interface2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/util" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/util/telnet.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test_case" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="interface2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -367,34 +502,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_case_allure" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="interface2" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/case" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/case/test_case_allure.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.linux_conn" />
-        <item itemvalue="Python.dataconfig" />
         <item itemvalue="Python.test_case" />
-        <item itemvalue="Python.test_case_allure" />
+        <item itemvalue="Python.compare" />
         <item itemvalue="Python.send_main" />
+        <item itemvalue="Python.telnet" />
+        <item itemvalue="Python.linux_conn" />
       </list>
     </recent_temporary>
   </component>
@@ -425,7 +539,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3286334" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3286334" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -530,13 +644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/ddt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="144" selection-start-line="144" selection-end-line="144" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/unittest/case.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -554,30 +661,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/base/send_request.py">
+    <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/-1886036696/time.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1058">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="182">
+          <caret line="114" column="4" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/base/send_main.py">
+    <entry file="file://$PROJECT_DIR$/venv/case/test_case_allure.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2222">
-          <caret line="114" selection-start-line="114" selection-end-line="114" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/case/test_case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="20" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="55" />
+        <state relative-caret-position="792">
+          <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -591,6 +685,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/venv/util/read_ini.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/venv/util/opera_db.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -598,82 +699,151 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/case/test_case_allure.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="36" column="34" lean-forward="true" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/-1886036696/time.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="114" column="4" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/venv/util/file">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/telnetlib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="308" column="25" lean-forward="true" selection-start-line="308" selection-start-column="25" selection-end-line="308" selection-end-column="25" />
+        <state relative-caret-position="1386">
+          <caret line="195" column="8" selection-start-line="195" selection-start-column="8" selection-end-line="195" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/util/read_ini.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/typing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="5792">
+          <caret line="831" selection-start-line="831" selection-end-line="831" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/config/global_var.ini">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3/socket.pyi">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="-552">
+          <caret line="524" column="8" lean-forward="true" selection-start-line="524" selection-start-column="8" selection-end-line="524" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/util/compare.py">
+    <entry file="file://$PROJECT_DIR$/venv/LOG/2019-07-02/xgl.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="51" column="36" lean-forward="true" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
+        <state>
+          <caret selection-end-line="19" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/util/send_mail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/util/linux_conn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="29" column="74" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="74" />
+        <state relative-caret-position="108">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/venv/util/telnet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-750">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/LOG/2019-07-02/check_file.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/config/global_var.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/requests/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="884" selection-start-line="884" selection-end-line="884" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/ddt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="144" selection-start-line="144" selection-end-line="144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/config/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="920">
+          <caret line="42" column="11" selection-start-line="42" selection-end-line="42" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/base/send_request.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="52" column="19" selection-start-line="42" selection-start-column="4" selection-end-line="52" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/config/dataconfig.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-906">
+          <caret line="190" column="40" selection-start-line="190" selection-start-column="40" selection-end-line="190" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/util/compare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="73" column="41" selection-start-line="73" selection-start-column="41" selection-end-line="73" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/base/send_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="105" column="29" lean-forward="true" selection-start-line="103" selection-start-column="16" selection-end-line="105" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/venv/config/set_db_config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+        <state relative-caret-position="498">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/config/settings.py">
+    <entry file="file://$PROJECT_DIR$/venv/case/test_case.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="46" column="10" selection-start-line="46" selection-end-line="46" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/config/dataconfig.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="195" column="26" selection-start-line="195" selection-start-column="26" selection-end-line="195" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="594">
+          <caret line="39" column="16" lean-forward="true" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
         </state>
       </provider>
     </entry>

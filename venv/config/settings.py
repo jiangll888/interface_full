@@ -39,12 +39,14 @@ DB_NAME = "test"
 TABLE_NAME = "`cases_copy`"
 
 win_ip = "192.168.18.101"
-SQLITE_PATH = "E:\工具\资料"
-SQLITE_HOST = "192.168.11.88"
+SQLITE_PATH = "E:/工具"
+SQLITE_HOST = "192.168.19.107"
 SQLITE_USER = "root"
 SQLITE_PORT = "23"
 SQLITE_PASSWD = ""
 SQLITE_CMD = "tftp -l {} -r {} -p {}"
+SQLITE_DB_NAME = "person_manager_record.db"
+OPEN_TFTP = "{}/tftp.exe".format(SQLITE_PATH)
 
 TEST_CASE_SQL = "select * from {};".format(TABLE_NAME)
 CLEAR_RESULT_SQL = "update {} set {}='';".format(TABLE_NAME,RESULT)
