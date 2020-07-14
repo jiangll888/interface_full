@@ -1,0 +1,1 @@
+2019/10/21 18:14:15    send_main.py    91    INFO -->  返回结果:{'code': 'BI_SUS-200', 'data': [{'industryId': 8, 'industryName': 'VR与电影'}], 'message': '操作成功', 'result': 1}

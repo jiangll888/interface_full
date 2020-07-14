@@ -1,0 +1,2 @@
+2019/10/21 17:20:32    send_main.py    91    INFO -->  返回结果:{'timestamp': 1571649631809, 'status': 404, 'error': 'Not Found', 'message': 'No message available', 'path': '/group/industry/list/'}
+2019/10/21 17:20:33    send_main.py    135    INFO -->  将结果写入数据库，结果为pass

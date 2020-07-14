@@ -1,0 +1,2 @@
+2019/10/21 14:25:07    send_main.py    91    INFO -->  返回结果:{'code': 'BI_GR_EXP_5302', 'data': None, 'message': '成员名称已存在', 'result': 0}
+2019/10/21 14:25:07    send_main.py    135    INFO -->  将结果写入数据库，结果为pass

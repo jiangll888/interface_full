@@ -5,11 +5,12 @@ from DBUtils.PooledDB import PooledDB
 from config import  settings
 from config.set_db_config import set_db_config
 import threading
+import redis
 
 class OperationDB:
     _instance_lock = threading.Lock()
 
-    def __init__(self,db_type=settings.DB_TYPE,db_name=None):
+    def __init__(self,db_type=settings.DB_TYPE,db_name=None,env="dev"):
         self.db_type = db_type
         # if db_type == 'oracle':
         #     tns = cx_Oracle.makedsn(host,port,ins_name)
@@ -27,15 +28,19 @@ class OperationDB:
         #         # 加上cursorclass之后就可以直接把字段名捞出来，和字段值组成键值对的形式
         #         cursorclass = pymysql.cursors.DictCursor
         #     )
-        db_config = set_db_config(db_type,db_name)
+        db_config = set_db_config(db_type,db_name,env)
         if self.db_type == "mysql":
             self.db = PooledDB(pymysql,5,**db_config).connection()
         elif self.db_type == "sqlite":
             self.db = PooledDB(sqlite3, 5, **db_config).connection()
+        elif self.db_type == "redis":
+            pool = redis.ConnectionPool(**db_config)
+            self.db = redis.Redis(connection_pool=pool)
         else:
             self.db = PooledDB(cx_Oracle, 5, **db_config).connection()
         # 创建游标
-        self.cur = self.db.cursor()
+        if self.db_type != "redis":
+            self.cur = self.db.cursor()
 
     def __new__(cls, *args, **kwargs):
         '''
@@ -54,9 +59,13 @@ class OperationDB:
     def search_one(self,sql,param=None):
         if self.db_type == "sqlite":
             self.cur.execute(sql)
+            res = self.cur.fetchone()
+        elif self.db_type == "redis":
+            #注意此时的sql并不是sql语句了，而是一个key值
+            res = self.db.get(sql).decode("utf-8")
         else:
             self.cur.execute(sql,param)
-        res = self.cur.fetchone()
+            res = self.cur.fetchone()
         if res and (self.db_type == 'oracle' or self.db_type == "sqlite"):
             res = self.makeDictFactory(*res)
         return res
@@ -92,11 +101,16 @@ class OperationDB:
         self.db.close()
 
 if __name__ == '__main__':
-    opera_db = OperationDB('sqlite',"person_manager_record.db")
-    res = opera_db.search_one('select `col_1`,`col_2` from `person_table` where `col_1`="48729894";')
-    # # res = opera_db.search_one("select user_name,telphone,source,status from t_activity_order WHERE source='PAWH'" )
-    print(res,type(res))
-
+    # opera_db = OperationDB('sqlite',"person_manager_record.db")
+    # res = opera_db.search_one('select `col_1`,`col_2` from `person_table` where `col_1`="48729894";')
+    # # # res = opera_db.search_one("select user_name,telphone,source,status from t_activity_order WHERE source='PAWH'" )
+    # print(res,type(res))
+    opera_db = OperationDB(db_name="uniubi_bi_device")
+    for i in range(10):
+        print(opera_db.search_one("select COUNT(*) from  device_group where group_id=1 and group_floor_id={} and group_member_id is  null  and is_delete=0;".format(i+1)))
+        # print(opera_db.search_one("SELECT count(*) from group_portal where group_id=1 and group_floor_id={}  and is_delete=0 and group_member_id is  null and type=2;".format(i+1)))
+        # print(opera_db.search_one("SELECT count(*) from group_portal where group_id=1 and group_floor_id={}  and is_delete=0  and type=3;".format(i+1)))
+        # print(opera_db.search_one("SELECT count(*) from group_member_floor where group_floor_id={}  and is_delete=0;".format(i+1)))
     # # res1 = opera_db.makeDictFactory(*res)
     # # print(type(res1))
     # opera_db.close()

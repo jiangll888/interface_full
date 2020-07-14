@@ -1,0 +1,3 @@
+2019/10/21 18:24:56    send_main.py    91    INFO -->  返回结果:{'code': 'BI_SUS-200', 'data': [{'floorStatus': 1, 'groupId': 9, 'id': 23, 'imageUrl': '', 'index': 1, 'mapUrl': 'http://offline-browser-images-test.oss-cn-hangzhou.aliyuncs.com/test/uniubi-bi-group/map/1/2019-10-15T10:21:14.711Z-F1.svg', 'name': '1楼'}], 'message': '操作成功', 'result': 1}
+2019/10/21 18:24:56    send_main.py    111    INFO -->  预期接口返回结果与实际接口返回结果进行对比，对比结果是True
+2019/10/21 18:24:56    send_main.py    135    INFO -->  将结果写入数据库，结果为pass

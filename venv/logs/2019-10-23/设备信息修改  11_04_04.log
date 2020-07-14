@@ -1,0 +1,2 @@
+2019/10/23 11:04:04    send_main.py    91    INFO -->  返回结果:{'code': 'BI_DEV_EXP-2011', 'data': None, 'message': '设备名称重复', 'result': 0}
+2019/10/23 11:04:04    send_main.py    135    INFO -->  将结果写入数据库，结果为pass

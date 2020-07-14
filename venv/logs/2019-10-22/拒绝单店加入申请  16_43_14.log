@@ -1,0 +1,3 @@
+2019/10/22 16:43:15    send_main.py    91    INFO -->  返回结果:{'code': 'BI_EXP-606', 'data': None, 'message': '请求方法不支持！', 'result': 0}
+2019/10/22 16:43:15    send_main.py    135    INFO -->  将结果写入数据库，结果为pass
+2019/10/22 16:43:15    post_act.py    66    INFO -->  给依赖接口做数据清理

@@ -33,7 +33,7 @@ class ReadIni:
             else:
                 self.config.add_section(section)
                 self.config.set(section,key,value)
-        with open(self.filename,"w") as fp:
+        with open(self.filename,"w",encoding="utf-8") as fp:
             self.config.write(fp)
 
 if __name__ == "__main__":

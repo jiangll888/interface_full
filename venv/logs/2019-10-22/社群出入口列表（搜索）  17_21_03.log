@@ -1,0 +1,1 @@
+2019/10/22 17:21:03    send_main.py    91    INFO -->  返回结果:{'code': 'BI_SUS-200', 'data': {'list': [{'coordinates': '', 'device': [], 'groupFloorId': 25, 'groupId': 11, 'groupMemberId': None, 'id': 72, 'index': None, 'name': '内部出入口直梯1', 'tag': 3, 'type': 1}], 'page': {'index': 1, 'length': 10, 'size': 1, 'total': 1}}, 'message': '操作成功', 'result': 1}

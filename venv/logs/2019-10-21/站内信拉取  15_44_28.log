@@ -1,0 +1,3 @@
+2019/10/21 15:44:28    send_main.py    91    INFO -->  返回结果:{'code': 'BI_SUS-200', 'data': {'list': [{'content': '站内信', 'createTime': 1571643867000, 'id': 3, 'isRead': 0, 'remark': '备注'}, {'content': '站内信', 'createTime': 1571643551000, 'id': 2, 'isRead': 1, 'remark': '备注'}, {'content': '单店【测试门店】-已被管理员社群【测试连锁】移除', 'createTime': 1571386001000, 'id': 1, 'isRead': 1, 'remark': ''}], 'page': {'index': 1, 'length': 10, 'size': 1, 'total': 3}}, 'message': '操作成功', 'result': 1}
+2019/10/21 15:44:28    send_main.py    111    INFO -->  预期接口返回结果与实际接口返回结果进行对比，对比结果是False
+2019/10/21 15:44:28    send_main.py    138    ERROR -->  将结果写入数据库，结果为fail，case_id为bs18_siteNoticeList_001

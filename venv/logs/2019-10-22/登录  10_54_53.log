@@ -1,0 +1,4 @@
+2019/10/22 10:54:54    send_main.py    91    INFO -->  返回结果:{'code': 'BI_SUS-200', 'data': {'accountAddress': None, 'contact': '', 'createTime': 1571645921000, 'email': 'jiangliulin@163.com', 'headImg': '', 'id': 10, 'name': '', 'phoneNumber': '15995807141', 'token': '7BF95A8258A24AD2B8139CD2EBD83F1E', 'updateTime': None}, 'message': '操作成功', 'result': 1}
+2019/10/22 10:54:54    send_main.py    111    INFO -->  预期接口返回结果与实际接口返回结果进行对比，对比结果是True
+2019/10/22 10:54:54    opera_token.py    20    INFO -->  写入token，token为  7BF95A8258A24AD2B8139CD2EBD83F1E
+2019/10/22 10:54:54    send_main.py    135    INFO -->  将结果写入数据库，结果为pass

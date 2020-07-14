@@ -1,0 +1,3 @@
+2019/10/22 15:24:00    send_main.py    91    INFO -->  返回结果:{'code': 'BI_SUS-200', 'data': [{'code': '214A8CJSVZ', 'contact': '小明', 'defaultIndustry': 1, 'id': 11, 'name': '商场社群_autotest', 'phoneNumber': '18515258420', 'type': 1}, {'code': '3748D8FPCQ', 'contact': '小明', 'defaultIndustry': None, 'id': 17, 'name': '连锁社群_autotest', 'phoneNumber': '18515258420', 'type': 2}, {'code': '', 'contact': '小明', 'defaultIndustry': None, 'id': 18, 'name': '单店社群_autotest', 'phoneNumber': '18515258420', 'type': 3}], 'message': '操作成功', 'result': 1}
+2019/10/22 15:24:00    send_main.py    111    INFO -->  预期接口返回结果与实际接口返回结果进行对比，对比结果是True
+2019/10/22 15:24:00    send_main.py    135    INFO -->  将结果写入数据库，结果为pass

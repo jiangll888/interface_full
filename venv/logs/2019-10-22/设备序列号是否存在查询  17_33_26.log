@@ -1,0 +1,2 @@
+2019/10/22 17:33:26    send_main.py    91    INFO -->  返回结果:{'code': 'BI_SUS-200', 'data': {'code': 'BI_DEV_EXP-2020', 'message': '该设备已被添加', 'result': False}, 'message': '操作成功', 'result': 1}
+2019/10/22 17:33:26    send_main.py    135    INFO -->  将结果写入数据库，结果为pass

@@ -1,0 +1,2 @@
+2019/10/22 16:45:13    send_main.py    91    INFO -->  返回结果:{'code': 'BI_EXP-600', 'data': None, 'message': '社群不能为空', 'result': 0}
+2019/10/22 16:45:13    send_main.py    135    INFO -->  将结果写入数据库，结果为pass

@@ -1,0 +1,1 @@
+2019/10/21 14:42:58    send_main.py    91    INFO -->  返回结果:{'code': 'BI_SUS-200', 'data': {'floorStatus': None, 'groupId': 6, 'id': 21, 'imageUrl': '', 'index': 1, 'mapUrl': 'http://offline-browser-images-test.oss-cn-hangzhou.aliyuncs.com/test/uniubi-bi-group/map/1/2019-10-15T10:21:14.711Z-F1.svg', 'name': '1楼'}, 'message': '操作成功', 'result': 1}

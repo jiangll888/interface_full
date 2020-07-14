@@ -1,0 +1,4 @@
+2019/10/22 15:13:33    send_main.py    91    INFO -->  返回结果:{'code': 'BI_SUS-200', 'data': {'coordinates': '', 'device': [], 'groupFloorId': 25, 'groupId': 11, 'groupMemberId': None, 'id': 72, 'name': '内部出入口直梯bg', 'tag': 3, 'type': 1}, 'message': '操作成功', 'result': 1}
+2019/10/22 15:13:33    send_main.py    111    INFO -->  预期接口返回结果与实际接口返回结果进行对比，对比结果是True
+2019/10/22 15:13:33    send_main.py    135    INFO -->  将结果写入数据库，结果为pass
+2019/10/22 15:13:33    post_act.py    56    INFO -->  给当前接口做数据清理

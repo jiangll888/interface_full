@@ -1,0 +1,2 @@
+2019/10/22 18:17:33    send_main.py    91    INFO -->  返回结果:{'code': 'BI_EXP-606', 'data': None, 'message': '请求方法不支持！', 'result': 0}
+2019/10/22 18:17:33    send_main.py    135    INFO -->  将结果写入数据库，结果为pass

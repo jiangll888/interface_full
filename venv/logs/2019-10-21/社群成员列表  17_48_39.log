@@ -1,0 +1,2 @@
+2019/10/21 17:48:39    send_main.py    91    INFO -->  返回结果:{'code': 'BI_SUS-200', 'data': [{'contact': '小明', 'groupId': 7, 'id': 51, 'industryId': 1, 'industryName': '餐饮', 'logoUrl': '', 'name': '商场成员1', 'phoneNumber': '18515258420'}], 'message': '操作成功', 'result': 1}
+2019/10/21 17:48:39    send_main.py    135    INFO -->  将结果写入数据库，结果为pass

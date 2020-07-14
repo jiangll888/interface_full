@@ -1,0 +1,2 @@
+2019/10/24 14:01:51    send_main.py    91    INFO -->  返回结果:{'code': 'BI_SUS-200', 'data': [{'code': '120000000000', 'count': 1}], 'message': '操作成功', 'result': 1}
+2019/10/24 14:01:51    send_main.py    135    INFO -->  将结果写入数据库，结果为pass

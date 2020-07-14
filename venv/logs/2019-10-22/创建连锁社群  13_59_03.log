@@ -1,0 +1,3 @@
+2019/10/22 13:59:03    send_main.py    91    INFO -->  返回结果:{'code': 'BI_SUS-200', 'data': {'accountId': 10, 'address': {'address': '详细地址', 'cityCode': '222', 'districtCode': '333', 'provinceCode': '111'}, 'bodySetId': '4404416184413183999', 'code': '4A4786PMEH', 'contact': '小明', 'defaultIndustry': None, 'faceSetId': 'DFABAB1E1E77408BA061C824D1BB1B14', 'id': 15, 'imageUrl': '', 'mapUrl': '', 'name': '连锁社群_autotest', 'phoneNumber': '18515258420', 'type': 2}, 'message': '操作成功', 'result': 1}
+2019/10/22 13:59:03    send_main.py    111    INFO -->  预期接口返回结果与实际接口返回结果进行对比，对比结果是True
+2019/10/22 13:59:03    send_main.py    135    INFO -->  将结果写入数据库，结果为pass

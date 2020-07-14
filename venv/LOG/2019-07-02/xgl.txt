@@ -1,10 +1,0 @@
-ls
-
-Password: 
-ls
-
-[1;32mWelcome to HiLinux.[0;39m
-None of nfsroot found in cmdline.
-~ # ls
-~ # 
-~ # 

@@ -1,0 +1,1 @@
+2019/10/24 13:56:32    send_main.py    91    INFO -->  返回结果:{'code': 'BI_SUS-200', 'data': [{'contact': '', 'groupId': 23, 'id': 70, 'industryId': None, 'industryName': '', 'logoUrl': '', 'name': '连锁成员1', 'phoneNumber': ''}], 'message': '操作成功', 'result': 1}

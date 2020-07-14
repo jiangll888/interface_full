@@ -1,0 +1,2 @@
+2019/10/23 15:19:45    send_main.py    91    INFO -->  返回结果:{'code': 'BI_SUS-200', 'data': {'coordinates': '-99.7662770761043,73.06303562822511', 'device': [], 'groupFloorId': None, 'groupId': 18, 'groupMemberId': None, 'id': 75, 'name': '外部出入口1_单店', 'tag': 3, 'type': 2}, 'message': '操作成功', 'result': 1}
+2019/10/23 15:19:45    send_main.py    135    INFO -->  将结果写入数据库，结果为pass

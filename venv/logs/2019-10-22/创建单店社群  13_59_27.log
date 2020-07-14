@@ -1,0 +1,3 @@
+2019/10/22 13:59:27    send_main.py    91    INFO -->  返回结果:{'code': 'BI_SUS-200', 'data': {'accountId': 10, 'address': {'address': '详细地址', 'cityCode': '222', 'districtCode': '333', 'provinceCode': '111'}, 'bodySetId': '4404416184314753023', 'code': '', 'contact': '小明', 'defaultIndustry': None, 'faceSetId': '220625CCFFF148F8B64CC2F513E00E2C', 'id': 16, 'imageUrl': '', 'mapUrl': '', 'name': '单店社群_autotest', 'phoneNumber': '18515258420', 'type': 3}, 'message': '操作成功', 'result': 1}
+2019/10/22 13:59:27    send_main.py    111    INFO -->  预期接口返回结果与实际接口返回结果进行对比，对比结果是False
+2019/10/22 13:59:27    send_main.py    138    ERROR -->  将结果写入数据库，结果为fail，case_id为bs29_group_chainCreate_store

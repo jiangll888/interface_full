@@ -1,0 +1,3 @@
+2019/10/22 14:57:55    send_main.py    91    INFO -->  返回结果:{'code': 'BI_SUS-200', 'data': [{'coordinates': '', 'device': [], 'groupFloorId': 25, 'groupId': None, 'groupMemberId': None, 'id': 72, 'index': 1, 'name': '内部出入口直梯bg', 'tag': 3, 'type': 1}, {'coordinates': '', 'device': [], 'groupFloorId': 25, 'groupId': None, 'groupMemberId': None, 'id': 73, 'index': 1, 'name': '内部出入口直梯1', 'tag': 3, 'type': 1}], 'message': '操作成功', 'result': 1}
+2019/10/22 14:57:55    send_main.py    111    INFO -->  预期接口返回结果与实际接口返回结果进行对比，对比结果是False
+2019/10/22 14:57:55    send_main.py    138    ERROR -->  将结果写入数据库，结果为fail，case_id为bs60_group_portal_list

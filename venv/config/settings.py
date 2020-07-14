@@ -14,21 +14,20 @@ IS_RUN = "is_run"
 DEPEND_CASE_ID = "depend_case_id"
 DEPEND_REQUEST_FIELD = "depend_request_field"
 DEPEND_RESPONSE_FIELD = "depend_response_field"
+SAVE_VALUE = "save_value"
 POST_ACTION = "post_action"
 EXPECT = "expect"
 EXPECT_FOR_DB = "expect_for_db"
 RESULT = "result"
 TOKEN = "token"
 POST_PARAMS = "post_params"
-# BASE_URL = "http://172.16.3.55:8940"
-#BASE_URL = "http://study-perf.qa.netease.com"
-BASE_URL = "http://192.168.1.68:8090"
+
 
 HEADER_URLENCODE = "application/x-www-form-urlencoded"
 HEADER_TYPE = "Content-Type"
-URL_ENCODE = {"Content-Type":"application/x-www-form-urlencoded"}
+HEADER_JSON = {"Content-Type":"application/json"}
 URL_RE = "^https?://(\d{1,3}.){3}\d{1,3}:\d{1,5}|^https?://.*com/"
-
+FILE_COUNT_RE = "\d+"
 
 DB_TYPE = "mysql"
 DB_HOST = "127.0.0.1"
@@ -40,17 +39,26 @@ TABLE_NAME = "`cases_copy`"
 
 win_ip = "192.168.18.101"
 SQLITE_PATH = "E:/工具"
-SQLITE_HOST = "192.168.19.107"
+SQLITE_HOST = "192.168.16.240"
 SQLITE_USER = "root"
 SQLITE_PORT = "23"
-SQLITE_PASSWD = ""
+SQLITE_PASSWD = "6yhNji9admin"
 SQLITE_CMD = "tftp -l {} -r {} -p {}"
-SQLITE_DB_NAME = "person_manager_record.db"
-OPEN_TFTP = "{}/tftp.exe".format(SQLITE_PATH)
+# SQLITE_DB_NAME = "person_manager_record.db"
+DEV_DB_NAME = ""
+OPEN_TFTP = "start {}/tftpd32.exe".format(SQLITE_PATH)
 
 TEST_CASE_SQL = "select * from {};".format(TABLE_NAME)
+TABLE_NAME_NOTICE = "site_notice"
 CLEAR_RESULT_SQL = "update {} set {}='';".format(TABLE_NAME,RESULT)
+CLEAR_SITENOTICE_SQL = "delete from {};".format(TABLE_NAME_NOTICE)
+TABLE_NAME_DEVELOPER = "developer"
+CLEAR_DEVELOPER_SQL = "delete from {};".format(TABLE_NAME_DEVELOPER)
+TABLE_NAME_CALLBACK = "callback_config"
+CLEAR_CALLBACK_SQL = "delete from {};".format(TABLE_NAME_CALLBACK)
 UPDATE_RESULT_SQL = "update {} set {}=%s where {}=%s;".format(TABLE_NAME,RESULT,CASE_ID)
+TABLE_NAME_ACCOUNT = "account"
+DELETE_ACCOUNT_SQL = "delete from {} where phone_number=15995807141;".format(TABLE_NAME_ACCOUNT)
 LINE_DATA_SQL = "select * from {} where {}=%s;".format(TABLE_NAME,CASE_ID)
 GET_RESULT_SQL = "select {}  from {};".format(RESULT,TABLE_NAME)
 

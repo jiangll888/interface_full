@@ -17,6 +17,7 @@ read_i = ReadIni()
 
 class Test01:
     def setup_class(self):
+        os.system(settings.OPEN_TFTP)
         op_db.sql_DML(settings.CLEAR_RESULT_SQL)
 
     def setup_method(self):

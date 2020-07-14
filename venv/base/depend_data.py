@@ -6,6 +6,7 @@ from base.opera_cookie import OperaCookie
 from jsonpath_rw import parse,jsonpath
 import json
 from base.handle_value_list_dict import HandleListOrDict
+from base.handle_save_value import HandleSaveValue
 
 class DependData:
     def __init__(self,data):
@@ -51,6 +52,7 @@ class DependData:
         self.request_data = data_config.get_data()
         self.request_file = data_config.get_file()
         self.depend_case_id = data_config.get_depend_case_id()
+        self.save_value = data_config.get_save_value()
 
     def send_depend_request(self,depend_case_id):
         '''
@@ -70,6 +72,9 @@ class DependData:
             res = sr.send_request(self.method, self.url, self.request_data,self.request_file, self.request_param,self.header, cookie)
         else:
             res = sr.send_request(self.method, self.url, self.request_data,self.request_file, self.request_param, self.header)
+        if self.save_value:
+            HandleSaveValue().save_response_data(res.json(), self.save_value)
+        print(res.json())
         return res.json()
 
     def get_response_field(self):
@@ -79,8 +84,8 @@ class DependData:
         '''
         data_config = DataConfig(self.data)
         res_fields = data_config.get_depend_response_field()
-        if res_fields:
-            res_fields_list = res_fields.split("|")
+        # if res_fields:
+        res_fields_list = res_fields.split("|")
         return [res_fields.split(";") for res_fields in res_fields_list] # ;用于分隔多个字段
 
     def get_response_data(self):
@@ -94,7 +99,10 @@ class DependData:
         for i, depend_case_id in enumerate(depend_case_ids):
             response_data = self.send_depend_request(depend_case_id)
             fields = []
-            if depend_fields_list[i]:
+            #做判空处理，有时依赖多个接口，但并不需要所有接口的字段，用| 但是 | 前面不写内容即可
+            if depend_fields_list[i] and depend_fields_list[i] == ['']:
+                fields_list.append([''])
+            if depend_fields_list[i] and depend_fields_list[i] != ['']:
                 for depend_field in depend_fields_list[i]:
                     depend_field = parse(depend_field)
                     madle = depend_field.find(response_data)
@@ -112,8 +120,6 @@ class DependData:
         req_fields = data_config.get_depend_request_field()
         if req_fields:
             req_fields_list = req_fields.split("|")
-        # req = [json.loads(req_fields) for req_fields in req_fields_list]
-        #req = [req_fields for req_fields in req_fields_list]
         return req_fields_list
 
     def replace_request_data(self):
@@ -132,10 +138,10 @@ class DependData:
                 for i in range(len(fields)):
                     if conn:
                         params[fields[i]] = conn.join(response_fields_list[num])
-                    #params[fields[i]] = response_fields_list[num][i]  #fields是参数的数组，需要与返回参数的数组顺序一致
                     else:
                         field = fields[i].split(".")
                         params = self.replace_json(params,field,response_fields_list[num][i])
+        print("替换后的请求数据：{}".format(str(params)))
         return params
 
     #替换json中的value,key值传入list
